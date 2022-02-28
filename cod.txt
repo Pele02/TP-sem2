@@ -1,0 +1,60 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+//Funcrie cautare liniara
+int cautare_lin(int n, int x )
+{
+	int i = 0, a[250];
+	printf("Dati elementele sirului:\n");
+	for (i = 0; i < n;i++)
+	{
+		printf("a[%d]= ", i);
+		scanf("%d", &a[i]);
+	}
+	while (i < n && x != a[i])
+	{
+		i++;
+	}
+	if (x == a[i])
+		return i;
+	else
+		return 0;
+}
+
+//Funcrie cautare binara
+int cautare_bin(int n, int x)
+{
+	int li = 1, lf = n, k = 0, i, a[250];
+	printf("Dati elementele sirului:\n");
+	for (i = 0; i < n; i++)
+	{
+		printf("a[%d]= ", i);
+		scanf("%d", &a[i]);
+	}
+	while (li <= lf)
+	{
+		k = (li + lf) / 2;
+		if (x == a[k])
+//K arata pozitia se schimba cu 1 daca se doreste sa se stie daca exista elementul cautat in sir
+			return k;
+		else
+		{
+			if (x < a[k])
+				lf = k - 1;
+			else
+				li = k + 1;
+		}
+	}
+	return 0;
+}
+
+int main()
+{
+	int n, x;
+	printf("Dati numarul de elemente: ");
+	scanf("%d", &n);
+	printf("Dati elementul dorit: ");
+	scanf("%d", &x);
+	//printf("%d", cautare_lin(n, x));
+	printf("%d", cautare_bin(n, x));
+}
