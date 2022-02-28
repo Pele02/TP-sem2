@@ -58,3 +58,5 @@ int main()
 	//printf("%d", cautare_lin(n, x));
 	printf("%d", cautare_bin(n, x));
 }
+
+//cod1 TP
