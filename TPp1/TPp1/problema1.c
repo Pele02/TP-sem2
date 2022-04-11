@@ -20,12 +20,13 @@ int main()
 		rez = rez / 10;
 		ogl = ogl * 10 + uc;
 	}
+	printf("%d\n", ogl);
 	while (ogl != 0)
 	{
-		cifra = n % 10;
+		cifra = ogl % 10;
 		rez = rez + cifra * put;
 		put = put * 2;
-		n = n / 10;
+		ogl = ogl / 10;
 	}
 	printf("%d", rez);
 	return 0;
