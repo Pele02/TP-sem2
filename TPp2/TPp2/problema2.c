@@ -39,8 +39,10 @@ void push(int* size, int* stack, int valToAdd) {
 		printf("\nStack is full!\n");
 	}
 	else {
-		stack[*size] = valToAdd;		// se adauga element in varful stivei
-		(*size)++;						// se incrementeaza valoarea variabilei size (adica se actualizeaza pozitia varfului ca fiind cu una mai sus decat inainte)
+		do {
+			stack[*size] = valToAdd;		// se adauga element in varful stivei
+			(*size)++;
+		} while (!validare_push(valToAdd));					// se incrementeaza valoarea variabilei size (adica se actualizeaza pozitia varfului ca fiind cu una mai sus decat inainte)
 	}
 }
 
@@ -52,8 +54,10 @@ int pop(int* size, int* stack) {
 }
 int validare_push(char caract)
 {
-	if(caract!='M'|| caract!='m')
-
+	if (caract != 'M' || caract != 'm')
+		return 0;
+	else
+		return 1;
 }
 // stack -> stiva, in cazul nostru e de tip int si poate avea maxim 100 de elemente
 // size -> retine marimea stivei, stack[size - 1] fiind elementul din varful stivei
