@@ -4,14 +4,14 @@
 
 int main()
 {
-	int n, i, k, nr[34],cnt;
+	int n, rez, put, rest;
 	printf("Dati numarul dorit: ");
 	scanf("%d", &n);
-	for (i = 31; i >= 0; i--)
+	while (n != 0)
 	{
-		k = n >> i;
-		if (k & 1)
-		
+		rest = n % 2;
+		rez = rez + rest * put;
+		nr = nr / 2;
 	}
 
 	return 0;
