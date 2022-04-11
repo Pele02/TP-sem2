@@ -50,13 +50,7 @@ int pop(int* size, int* stack) {
 	(*size)--;							// se decrementeaza valoarea variabilei size (practic se ignora valoarea din varful stivei, va fi la un moment dat suprascrisa de un push cu o alta valoare, si se actualizeaza varful ca fiind cu o pozitie mai jos)
 	return stack[*size];				// se returneaza valoarea fostului varf al stivei (adica elementul extras)
 }
-int validare_push(char caract)
-{
-	if (caract == 'M' || caract == 'm')
-		return 1;
-	else
-		return 0;
-}
+
 // stack -> stiva, in cazul nostru e de tip int si poate avea maxim 100 de elemente
 // size -> retine marimea stivei, stack[size - 1] fiind elementul din varful stivei
 int main() {
