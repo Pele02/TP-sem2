@@ -55,9 +55,9 @@ int pop(int* size, int* stack) {
 int validare_push(char caract)
 {
 	if (caract != 'M' || caract != 'm')
-		return 0;
-	else
 		return 1;
+	else
+		return 0;
 }
 // stack -> stiva, in cazul nostru e de tip int si poate avea maxim 100 de elemente
 // size -> retine marimea stivei, stack[size - 1] fiind elementul din varful stivei
