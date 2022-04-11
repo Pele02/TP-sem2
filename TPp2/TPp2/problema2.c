@@ -54,7 +54,7 @@ int pop(int* size, int* stack) {
 }
 int validare_push(char caract)
 {
-	if (caract != 'M' || caract != 'm')
+	if (caract == 'M' || caract == 'm')
 		return 1;
 	else
 		return 0;
