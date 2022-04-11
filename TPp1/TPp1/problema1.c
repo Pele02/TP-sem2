@@ -11,13 +11,7 @@ int main()
 	{
 		k = n >> i;
 		if (k & 1)
-		{
-			nr[cnt] = '1';
-			cnt++;
-		}
-		else
-			nr[cnt] = '0';
-		cnt
+		
 	}
 
 	return 0;
