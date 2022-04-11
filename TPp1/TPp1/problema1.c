@@ -24,7 +24,7 @@ int main()
 	}
 	printf("%d\n", ogl);
 
-
+	put = 1;
 	while (ogl != 0)
 	{
 		cifra = ogl % 10;
