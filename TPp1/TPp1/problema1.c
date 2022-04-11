@@ -4,13 +4,16 @@
 
 int main()
 {
-	int n, i, ;
+	int n, i, k;
 	printf("Dati numarul dorit: ");
 	scanf("%d", &n);
-	for (i = 1; n >= 0; i++)
+	for (i = 31; i >= 0; i--)
 	{
-		binar[i] = n % 2;
-		n /= 2;
+		k = n >> i;
+		if (k & 1)
+			printf("1");
+		else
+			printf("0");
 	}
 
 	return 0;
