@@ -39,10 +39,8 @@ void push(int* size, int* stack, int valToAdd) {
 		printf("\nStack is full!\n");
 	}
 	else {
-		do {
 			stack[*size] = valToAdd;		// se adauga element in varful stivei
-			(*size)++;
-		} while (!validare_push(valToAdd));					// se incrementeaza valoarea variabilei size (adica se actualizeaza pozitia varfului ca fiind cu una mai sus decat inainte)
+			(*size)++;						// se incrementeaza valoarea variabilei size (adica se actualizeaza pozitia varfului ca fiind cu una mai sus decat inainte)
 	}
 }
 
