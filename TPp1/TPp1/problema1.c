@@ -7,6 +7,7 @@ int main()
 	int n, rez=0, put=1, rest, ogl=0, uc, cifra;
 	printf("Dati numarul dorit: ");
 	scanf("%d", &n);
+
 	while (n != 0)
 	{
 		rest = n % 2;
@@ -14,6 +15,7 @@ int main()
 		put = put * 10;
 		n = n / 2;
 	}
+
 	while (rez != 0)
 	{
 		uc = rez % 10;
@@ -21,6 +23,7 @@ int main()
 		ogl = ogl * 10 + uc;
 	}
 	printf("%d\n", ogl);
+
 	while (ogl != 0)
 	{
 		cifra = ogl % 10;
