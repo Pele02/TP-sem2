@@ -24,6 +24,8 @@ int main()
 		printf("v[%d]=", i);
 		scanf("%d", &v[i]);
 	}	
+	for(i=0;i<n;i++)
+		
 	
 }
 
