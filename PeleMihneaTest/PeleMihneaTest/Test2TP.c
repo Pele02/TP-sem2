@@ -14,7 +14,7 @@
 	return 0;
 }*/
 
-int rec(int v[], int n, int i)
+int rec(int a[], int n, int i)
 {
 	int j;
 	if (i > n)
@@ -22,7 +22,8 @@ int rec(int v[], int n, int i)
 	{
 		for (j = i + 1; j <= n; j++)
 			if (a[i] > a[j]);
-		a[i]`a[j]
+		return a[i]~a[j];
+			else  return rec(v, n, i + 1);
 
 	}
 }
@@ -35,7 +36,7 @@ int main()
 		printf("v[%d]=", i);
 		scanf("%d", &v[i]);
 	}	
-		
+	rec(v, n, i);
 	
 }
 
