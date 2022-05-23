@@ -19,21 +19,23 @@ int rec(int v[255], int n, int i)
 	if (i > n)
 		return 0;
 	if (v[i] > v[i + 1]);
-		return v[i]^v[i+1];
-		else  return v[i]^rec(v, n, i + 1);
+		 return v[i]^rec(v, n, i + 1);
 
 }
 
 int main()
 {
 	int n, i, v[255];
+	printf("Dati numarul de elemente:");
+	scanf("%d", &n);
+	printf("Dati elementele:\n");
 	for (i = 0; i < n; i++)
 	{
 		printf("v[%d]=", i);
 		scanf("%d", &v[i]);
 	}
 	for (i = 0; i < n; i++)
-		printf("%d", rec(v, n, i));
+		printf("%d ", rec(v, n, i));
 	
 }
 
