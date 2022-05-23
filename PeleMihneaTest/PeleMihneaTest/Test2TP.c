@@ -14,7 +14,11 @@
 	return 0;
 }*/
 
-int rec()
+int rec(int v[255])
+{
+	if (v[i] < v[i + 1]) return v[i];
+	else return v[]
+}
 
 int main()
 {
