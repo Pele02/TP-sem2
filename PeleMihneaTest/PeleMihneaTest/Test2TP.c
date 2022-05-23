@@ -14,7 +14,7 @@
 	return 0;
 }*/
 
-int rec(int v, int n, int i)
+int rec(int v[255], int n, int i)
 {
 	if (i > n)
 		return 0;
@@ -25,7 +25,7 @@ int rec(int v, int n, int i)
 
 int main()
 {
-	int n, i, v[255];
+	int n, i, v[255], k = 0;
 	printf("Dati numarul de elemente:");
 	scanf("%d", &n);
 	printf("Dati elementele:\n");
@@ -35,8 +35,11 @@ int main()
 		scanf("%d", &v[i]);
 	}
 	for (i = 0; i < n; i++)
-		rec(v, n, i)
-		k++;
+	{
+		rec(v, n, i);
+			k++;
+	}
+	printf("%d", k);
 	
 }
 
