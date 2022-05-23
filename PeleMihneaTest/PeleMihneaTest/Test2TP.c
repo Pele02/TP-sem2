@@ -14,10 +14,16 @@
 	return 0;
 }*/
 
-int rec(int v[255])
+int rec(int v[], int n, int i)
 {
-	if (v[i] < v[i + 1]) return v[i];
-	else return v[]
+	int j;
+	if (i > n)
+		return;
+	{
+		for (j = i + 1; j <= n; j++)
+			if (a[i] = a[j]);
+
+	}
 }
 
 int main()
