@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-int main()
+/*int main()
 {
 	FILE *f;
 	int n, v[255], i=0;
@@ -12,4 +12,18 @@ int main()
 	fclose(f);
 	
 	return 0;
+}*/
+
+
+
+int main()
+{
+	int n, i, v[255];
+	for (i = 0; i < n; i++)
+	{
+		printf("v[%d]=", i);
+		scanf("%d", &v[i]);
+	}	
+	
 }
+
